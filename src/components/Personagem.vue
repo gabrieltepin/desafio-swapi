@@ -1,6 +1,5 @@
 <template>
   <div>
-      <span class="yellow"> {{myPersonArray}} </span>
       <div>
         <section class="intro">
             A long time ago, in a galaxy far,<br> far away....
@@ -11,12 +10,12 @@
             <div id="board">  
                 <div id="content">
                     <p id="title">DESCOMPLICA</p>
-                    <p id="subtitle">O RETORNO DE TEODORO</p>
+                    <p id="subtitle">A ENTREVISTA DE TEODORO</p>
                     <br>
                     <button @click = "removePerson($index)" class="button">Eject</button>
                     <!-- exhibiting the star wars generated persons form the SWAPI API -->
                     <div>
-                        <div v-for = "(obj, n, index) in myJson.results"> 
+                        <div v-for = "(obj) in myJson.results"> 
                             <span :style = "{color:obj.eye_color}"> {{obj.name}}</span>  
                             <!-- if you want to select the person to exclude, just uncomment the line below-->
                             <!-- <button @click = "removePerson($event, index)" class="button">Eject</button> -->

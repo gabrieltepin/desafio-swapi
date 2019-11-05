@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- transmitindo informacao entre as siblings components Personagem.vue e RequestApi.vue -->
+    <!-- Comunication of properties between sibling components -->
     <request-api 
       @jsonReceived = "myJson = $event" 
       @personArray = "myPersonArray = $event" 

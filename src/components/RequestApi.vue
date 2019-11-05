@@ -2,7 +2,7 @@
     <div>
         <br>
         <p v-if = "notClicked">
-            <button @click="loadJson" class="button">Credits?</button>
+            <button @click="loadJson" class="button">Creditos</button>
         </p>
         <div>
             <br>
